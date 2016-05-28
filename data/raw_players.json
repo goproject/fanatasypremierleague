@@ -1,0 +1,182 @@
+[
+    {
+        "playername": "de Gea, D",
+        "team": "Manchester United",
+        "value": 5.8,
+        "role": "goalkeeper"
+    },
+    {
+        "playername": "Cech, P",
+        "team": "Arsenal",
+        "value": 7.7,
+        "role": "goalkeeper"
+    },
+    {
+        "playername": "Hart, J",
+        "team": "Manchester City",
+        "value": 5.8,
+        "role": "goalkeeper"
+    },
+    {
+        "playername": "Lloris, H",
+        "team": "Tottenham Hotspur",
+        "value": 5.6,
+        "role": "goalkeeper"
+    },
+    {
+        "playername": "Schmeichel, K",
+        "team": "Leicester City",
+        "value": 4.7,
+        "role": "goalkeeper"
+    },
+    {
+        "playername": "Smalling, C",
+        "team": "Manchester United",
+        "value": 6.3,
+        "role": "defender"
+    },
+    {
+        "playername": "Bellerin, H",
+        "team": "Arsenal",
+        "value": 5.9,
+        "role": "defender"
+    },
+    {
+        "playername": "Alderweireld, T",
+        "team": "Tottenham Hotspur",
+        "value": 5.9,
+        "role": "defender"
+    },
+    {
+        "playername": "Dier, E",
+        "team": "Tottenham Hotspur",
+        "value": 5.2,
+        "role": "defender"
+    },
+    {
+        "playername": "Monreal, N",
+        "team": "Arsenal",
+        "value": 5.8,
+        "role": "defender"
+    },
+    {
+        "playername": "Clyne, N",
+        "team": "Liverpool",
+        "value": 6.0,
+        "role": "defender"
+    },
+    {
+        "playername": "Cresswell, A",
+        "team": "West Ham United",
+        "value": 5.3,
+        "role": "defender"
+    },
+    {
+        "playername": "Fonte, J",
+        "team": "Southampton",
+        "value": 5.3,
+        "role": "defender"
+    },
+    {
+        "playername": "Koscielny, L",
+        "team": "Arsenal",
+        "value": 6.6,
+        "role": "defender"
+    },
+    {
+        "playername": "Kompany, V",
+        "team": "Manchester City",
+        "value": 6.0,
+        "role": "defender"
+    },
+    {
+        "playername": "Mahrez, R",
+        "team": "Leicester City",
+        "value": 6.4,
+        "role": "midfielder"
+    },
+    {
+        "playername": "Ozil, M",
+        "team": "Arsenal",
+        "value": 7.4,
+        "role": "midfielder"
+    },
+    {
+        "playername": "Barkley, R",
+        "team": "Everton",
+        "value": 5.9,
+        "role": "midfielder"
+    },
+    {
+        "playername": "Payet, D",
+        "team": "West Ham United",
+        "value": 5.6,
+        "role": "midfielder"
+    },
+    {
+        "playername": "Mata, J",
+        "team": "Manchester United",
+        "value": 7.3,
+        "role": "midfielder"
+    },
+    {
+        "playername": "Eriksen, C",
+        "team": "Tottenham Hotspur",
+        "value": 6.7,
+        "role": "midfielder"
+    },
+    {
+        "playername": "Hazard, E",
+        "team": "Chelsea",
+        "value": 8.0,
+        "role": "midfielder"
+    },
+    {
+        "playername": "de Bruyne, K",
+        "team": "Manchester City",
+        "value": 6.6,
+        "role": "midfielder"
+    },
+    {
+        "playername": "Coutinho, P",
+        "team": "Liverpool",
+        "value": 7.1,
+        "role": "midfielder"
+    },
+    {
+        "playername": "Sterling, R",
+        "team": "Manchester City",
+        "value": 7.2,
+        "role": "midfielder"
+    },
+    {
+        "playername": "Kane, H",
+        "team": "Tottenham Hotspur",
+        "value": 7.8,
+        "role": "striker"
+    },
+    {
+        "playername": "Aguero, S",
+        "team": "Manchester City",
+        "value": 9.5,
+        "role": "striker"
+    },
+    {
+        "playername": "Martial, A",
+        "team": "Manchester United",
+        "value": 6.7,
+        "role": "striker"
+    },
+    {
+        "playername": "Lukaku, R",
+        "team": "Everton",
+        "value": 8.2,
+        "role": "striker"
+    },
+    {
+        "playername": "Vardy, J",
+        "team": "Leicester City",
+        "value": 6.0,
+        "role": "striker"
+    }
+]

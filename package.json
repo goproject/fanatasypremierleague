@@ -1,0 +1,19 @@
+{
+  "name": "fantasy",
+  "version": "1.0.0",
+  "description": "Simulation of the Premier League fantasy game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinavshah/FantasyPremierLeague.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jinavshah/FantasyPremierLeague/issues"
+  },
+  "homepage": "https://github.com/jinavshah/FantasyPremierLeague#readme"
+}

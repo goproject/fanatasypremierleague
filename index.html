@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/ui-grid/ui-grid.min.css" rel="stylesheet">
+        <link href="style/style.css" rel="stylesheet">
+        <script src="lib/jquery/jquery-1.12.4.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/ui-grid/ui-grid.min.js"></script>
+        <script src="lib/acuteselect/acuteselect.js"></script>
+        <script src="scripts/teamselectionapp.js"></script>
+        <script src="scripts/teamselectionfactory.js"></script>
+        <script src="scripts/teamselectioncontroller.js"></script>
+        <script src="data/raw_players.json"></script>
+    </head>
+    <body ng-app="teamapp">
+        <div ng-controller="fantasyteamcontroller" ng-init="loadplayerslist()">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xd-12">
+                <span class="leaguename">
+                    Fantasy Premier League
+                </span>
+                <h2 class="text-center">
+                    <input type="text" name="teamname" placeholder="Select Team Name" ng-model="teamname">
+                </h2>
+            </div>
+            <div class="col-lg-offset-1 col-md-offset-1 col-lg-11 col-md-11 col-sm-11 col-xs-11  validationerror" ng-show="isValidationMessage()">
+                {{validate.message}}
+            </div>
+            <div class="col-lg-offset-1 col-md-offset-1 col-lg-6 col-md-6 col-sm-6 col-xs-12 selectedteamarena">
+                <span class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                    Players Selected: {{ selectedplayersgrid.data.length }}
+                </span>
+                <span class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                    Amount Spent: {{ totalAmountSpent().toFixed(1) }}
+                </span>
+                <span class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                    Amount Remaining: {{ (100 - totalAmountSpent()).toFixed(1) }}
+                </span>
+                <div ui-grid="selectedplayersgrid" ui-grid-selection class="selectedplayers"></div>
+                <button type="button" class="btn btn-success text-center" ng-click="deSelectPlayers()">Remove player(s)</button>
+                <button type="button" class="btn btn-success text-center"  data-toggle="modal" data-target="#selectPlayingXI" ng-disabled="arePlayersLessThan15()">Make XI team</button>
+                <!-- Button trigger modal -->
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 allplayersarena">
+                Select Players
+                <div ui-grid="playerselectionoptions" ui-grid-selection class="playerselectiongrid"></div>
+                <button type="button" class="btn btn-success text-center" ng-click="selectPlayers()">Select the player(s)</button>
+            </div>
+            <div class="modal fade" id="selectPlayingXI" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Select playing XI</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="" ng-repeat="player in selectedplayersgrid.data">
+                        <label><input type="checkbox" value="">{{"  " + player.playername + " - "}}{{player.role}}</label>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+.selectedteamarena {
+    height: 100vh;
+    border: 1px solid #CCCCCC;
+}
+.allplayersarena {
+    height: 100vh;
+    border: 1px solid #CCCCCC;
+}
+.playerselectiongrid {
+    width: 100%;
+    max-height: 100%;
+    text-align: left;
+}
+.playersfilter {
+    min-height: 200px;
+    background-color: black;
+    color: white;
+}
+.filterheader {
+    border: 1px solid #CCCCCC;
+    text-align: center;
+}
+.leaguename {
+    float: left;
+}
+.selectedplayers {
+    height: 500px;``
+}
